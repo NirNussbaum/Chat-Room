@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container my-5">
+        <h1 class="my-4 text-center">Nuss Chat</h1>
+        
+        <div class="chat-rooms mb-3 text-center">
+            <h6 class="my-2">Choose A Chatroom</h6>
+            <button class="btn btn-success" id="general">General</button>
+            <button class="btn btn-success my-1 mx-2" id="sport">Sport</button>
+            <button class="btn btn-success" id="coding">Coding</button>
+        </div>
+
+        <div class="chat-window">
+            <ul class="chat-list list-group"></ul>
+        </div>
+
+        <form class="new-chat my-3">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Your Message:</div>
+                </div>
+                <input type="text" id="message" class="form-control" required>
+                <div class="input-group-append">
+                    <input type="submit" value="Send" class="btn btn-success px-4">
+                </div>
+            </div>
+        </form>
+
+        <form class="new-name my-3">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Update Name:</div>
+                </div>
+                <input type="text" id="name" class="form-control" required>
+                <div class="input-group-append">
+                    <input type="submit" value=" Update " class="btn btn-success">
+                </div>
+            </div>
+        </form>
+
+        <div class="update-msg"></div>
+    </div>
+
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+    <script src="JS/firebase_connection.js"></script>
+    <script src="JS/chat.js"></script>
+    <script src="JS/ui.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+
+</html>

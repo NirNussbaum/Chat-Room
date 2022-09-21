@@ -1,0 +1,23 @@
+.container {
+    max-width: 650px !important;
+}
+
+h1 {
+    color: rgb(2, 51, 2);
+}
+
+.username {
+    font-weight: bold;
+}
+
+.time {
+    font-size: 0.7em;
+    color: #999;
+}
+
+.update-msg {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px auto;
+    color: rgb(9, 95, 9);
+}
